@@ -1,0 +1,37 @@
+{% extends 'admin/model/edit.html' %}
+
+{% block body %}
+{{ super() }}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script>
+<script type="text/javascript">
+    // https://gist.github.com/duncansmart/5267653
+    // find each text area marked to have an editor
+    var textarea = $("textarea[name='config']");
+    textarea.each(function() {
+        var mode = "yaml";
+        // create the editor div
+        var div = $('<div>', {
+            'width': textarea.outerWidth(),
+            'height': '50em',
+            'class': textarea.attr('class')
+        }).insertBefore(textarea);
+        // hide the original text area
+        textarea.hide();
+        // configure the editor
+        var editor = ace.edit(div[0]);
+        var session = editor.getSession();
+        editor.setTheme("ace/theme/github");
+        session.setValue(textarea.val());
+        session.setMode('ace/mode/' + mode);
+        session.setNewLineMode('unix');
+        session.setTabSize(4);
+        session.setUseSoftTabs(true);
+        session.setUseWrapMode(true);
+        // update the text area before submitting the form
+        textarea.closest('form').submit(function() {
+            textarea.val(editor.getSession().getValue());
+        });
+    });
+</script>
+{% endblock %}

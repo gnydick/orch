@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+# PYTHON_ARGCOMPLETE_OK
+import os
+
+from controllers import CLIArgs
+from controllers import RestController
+from controllers import CLIController
+
+
+def _main():
+    rest = RestController()
+    cli = CLIController()
+    orchargs = CLIArgs(rest)
+
+    (args, orch_args) = orchargs.parse_args(rest)
+
+    if args.command == 'get':
+        cli.get(**vars(args))
+    elif args.command == 'list':
+        cli.list(**vars(args))
+    elif args.command == 'query':
+        cli.query(**vars(args))
+    elif args.command == 'getver':
+        cli.get_version(**vars(args))
+    elif args.command == 'setver':
+        args_dict = vars(args)
+        cli.set_version(**args_dict)
+    elif args.command == 'setfield':
+        cli.set_field(**vars(args))
+    elif args.command == 'promote':
+        cli.promote(**vars(args))
+    elif args.command == 'create':
+        cli.create(vars(args))
+    elif args.command == 'delete':
+        cli.delete(**vars(args))
+    elif args.command == 'allocate':
+        if args.resource == 'subnet':
+            cli.allocate_subnet(**vars(args))
+    elif args.command == 'clone':
+        if args.resource == 'deployment':
+            cli.clone_deployment(**vars(args))
+        elif args.resource == 'config':
+            cli.clone_config()
+        elif args.resource == 'nodegroup':
+            cli.clone_nodegroup(**vars(args))
+        # TODO service clone
+    elif args.resource == 'service' and args.command == 'add_svc_config':
+        args_dict = vars(args)
+        args_dict['items'] = 'service_configs'
+        cli.add_to_collection(**args_dict)
+    elif args.resource == 'deployment' and args.command == 'addzone':
+        args_dict = vars(args)
+        args_dict['items'] = 'zones'
+        cli.add_to_collection(**args_dict)
+    elif args.resource == 'service' and args.command == 'del_svc_config':
+        args_dict = vars(args)
+        args_dict['items'] = 'servie_configs'
+        cli.del_from_collection(**args_dict)
+    elif args.resource == 'deployment' and args.command == 'delzone':
+        args_dict = vars(args)
+        args_dict['items'] = 'zones'
+        cli.del_from_collection(**args_dict)
+    elif args.resource == 'test':
+        cli.test(args)
+
+
+if __name__ == '__main__':
+    _main()

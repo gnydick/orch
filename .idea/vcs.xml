@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/api-api-spec" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/apps-app-data-review" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/apps-app-patient-management" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/apps-app-pdf-annotator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/apps-app-refinery-dashboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/auto-qa-e2e-automation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/data-data-patients-PHI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/data-data-patients-open" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/infra-auto-ciiinfra" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/infra-orch-orch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/infra-queuing-engueuer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-cp-auth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-cp-profile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-cp-sharing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-data-arangodb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-data-object-store" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-data-search" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-data-section-map-data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-data-terminology" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-data-terminology-data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-di-document" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-di-file" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-abbyyocr-worker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-aggregate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-clinical-data-parser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-dicom-aggregator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-dicom-processor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-extract" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-job" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-ocr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-paginator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-sectionizer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-dr-unpacker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-gw-fhir" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-gw-hie-gateway-interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-int-partnership" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-ml-document-classification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-ml-document-partitioning" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-ml-image-classification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-ml-image-classifier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-ml-ml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-ml-section-classification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-ml-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-nlp-clamp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-nlp-framework-NLP-APIs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-nlp-nlp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-nlp-resources" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-nlp-specialist-resources" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-nlp-thirdparty" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/pform-qa-refinery-qa" vcs="Git" />
+  </component>
+</project>

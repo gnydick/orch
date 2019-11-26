@@ -1,0 +1,19 @@
+GET http://orch/api/rest/v1/deployment?q={"filters":[{"name":"deployment_target_id","op":"like","val":"dev:%"}]}
+Accept: application/json
+Content-Type: application/json
+
+
+
+
+###
+
+-G \
+  -H "Content-type: application/json" \
+  -d "q={\"filters\":[{\"name\":\"name\",\"op\":\"like\",\"val\":\"%y%\"}]}"
+
+POST http://localhost:80/api/item
+Content-Type: application/json
+
+{}
+
+###
